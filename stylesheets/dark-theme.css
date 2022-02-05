@@ -1,0 +1,63 @@
+:root{
+--very-dark-blue: hsl(235, 21%, 11%);
+--very-dark-desaturated-blue: hsl(235, 24%, 19%);
+--light-grayish-blue: hsl(234, 39%, 85%);
+--light-grayish-blue2: hsl(236, 33%, 92%); /*hover*/
+--dark-grayish-blue: hsl(234, 11%, 52%);
+--very-dark-grayish-blue: hsl(233, 14%, 35%);
+--very-dark-grayish-blue2: hsl(237, 14%, 26%);
+}
+
+.header{
+  background: url(../images/bg-mobile-dark.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body{
+  background: var(--very-dark-blue);
+}
+
+.create-todo,
+.create-todo__input{
+  background: var(--very-dark-desaturated-blue);
+  color: var(--dark-grayish-blue);
+}
+
+.create-todo__circle{
+  border: thin solid var(--very-dark-grayish-blue);
+}
+
+.todo{
+  background: var(--very-dark-desaturated-blue);
+  color: var(--dark-grayish-blue);
+}
+
+.todos .todo:not(:last-child) {
+  border-bottom: thin solid var(--very-dark-grayish-blue);
+}
+
+.todo__check{
+  border: thin solid var(--very-dark-grayish-blue);
+}
+
+.actions{
+  background: var(--very-dark-desaturated-blue);
+  border-top: thin solid var(--very-dark-grayish-blue);
+  color: var(--dark-grayish-blue);
+}
+
+.mobile-filters{
+  background: var(--very-dark-desaturated-blue);
+  color: var(--dark-grayish-blue);
+}
+
+.info{
+  color: var(--dark-grayish-blue);
+}
+
+@media (min-width: 500px){
+  .header{
+    background: url(../images/bg-desktop-dark.jpg);
+  }
+}
